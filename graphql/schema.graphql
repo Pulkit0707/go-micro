@@ -3,7 +3,7 @@ scalar Time
 type Account{
     id: String!
     name: String!
-    orders: [order!]!
+    orders: [Order!]!
 }
 
 type Product{
@@ -16,7 +16,7 @@ type Product{
 type Order{
     id: String!
     createdAt: Time!
-    totalPrice: FLoat!
+    totalPrice: Float!
     products: [OrderedProduct!]!
 }
 
